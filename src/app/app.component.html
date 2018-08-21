@@ -1,0 +1,36 @@
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver m-b-110">
+					
+				</div>
+
+				<div class="table100 ver m-b-110">
+					<table data-vertable="ver">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column" data-column="column">Id</th>
+								<th class="column100 column" data-column="column">Name</th>
+								<th class="column100 column" data-column="column">Age</th>
+								<th class="column100 column" data-column="column">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row100" *ngFor="let user of users; index as i">
+								<td class="column100 column" data-column="column">{{user.id}}</td>
+								<td class="column100 column" data-column="column">{{user.name}}</td>
+								<td class="column100 column" [ngStyle]="{'color': user.age? user.age>18 ? '#5cb85c' : '#ba501b':'#e5e506'}" data-column="column">{{user.age?user.age:"Unknown"}}</td>
+								<td class="column100 column" data-column="column">
+                  <input type="submit" class="btn btn-danger" style="width:80px; height:30px"  (click)="remove(user.id)" value="remove"> 
+                </td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+

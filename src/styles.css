@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+body {
+  background: #1e1e2d;
+  color: #222a42;
+  font-size: 14px;
+  font-family: "Poppins";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dashboard-white .main-panel {
+  background: rgba(222, 222, 222, 0.3);
+}
+
+body.dashboard-white .footer ul li a {
+  color: #222a42;
+}
+
+body.dashboard-white .footer .copyright {
+  color: #222a42;
+}
+
+body.dashboard-white .navbar-minimize button i {
+  color: #222a42;
+}
+
+body.dashboard-white .navbar .navbar-brand {
+  color: #222a42;
+}
